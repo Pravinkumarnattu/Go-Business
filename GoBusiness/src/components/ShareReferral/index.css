@@ -1,0 +1,109 @@
+.share-referral-container {
+  width: 75%;
+  margin-top: 2rem;
+}
+
+.share-referral-sub-container {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.share-referral-heading {
+  margin: 0 0 20px 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1f2230;
+}
+
+.referrals-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.referral-input-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.referral-label {
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #9aa0ae;
+  text-transform: uppercase;
+}
+
+.referral-input {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 14px;
+  color: #1f2230;
+  background-color: #f7f8fb;
+  border: 1px solid #eceef3;
+  border-radius: 8px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.referral-input:focus {
+  border-color: #5b5fec;
+}
+
+.copy-button {
+  flex-shrink: 0;
+  align-self: flex-end;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #5b5fec;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.copy-button:hover {
+  background-color: #4a4ee0;
+}
+
+.copy-button:active {
+  background-color: #4244c9;
+}
+
+@media (max-width: 768px) {
+  .referrals-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .share-referral-container {
+    width: 90%;
+  }
+  .share-referral-sub-container {
+    padding: 20px;
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .copy-button {
+    align-self: stretch;
+  }
+}

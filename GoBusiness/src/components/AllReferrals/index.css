@@ -1,0 +1,242 @@
+.all-referral-container {
+  width: 75%;
+  margin-top: 2rem;
+}
+
+.all-referral-sub-container {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  margin-bottom: 5rem;
+}
+
+.all-referral-main-head {
+  margin: 0 0 20px 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1f2230;
+}
+
+.filter-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-container label::before {
+  content: "Search";
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.search-container input {
+  padding: 10px 14px;
+  font-size: 14px;
+  color: #1f2230;
+  border: 1px solid #e2e5ee;
+  border-radius: 8px;
+  outline: none;
+  width: 220px;
+}
+
+.search-container input::placeholder {
+  color: #b0b4c2;
+}
+
+.search-container input:focus {
+  border-color: #5b5fec;
+}
+
+.sort-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sort-container label {
+  font-size: 14px;
+  color: #6b7280;
+  white-space: nowrap;
+}
+
+.sort-container select {
+  padding: 10px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2230;
+  border: 1px solid #e2e5ee;
+  border-radius: 8px;
+  outline: none;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.sort-container select:focus {
+  border-color: #5b5fec;
+}
+
+.referral-container {
+  overflow-x: auto;
+  border-radius: 10px;
+  border: 1px solid #eceef3;
+}
+
+.referral-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-head th {
+  text-align: left;
+  padding: 14px 20px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #6b7280;
+  background-color: #f1f3f8;
+  white-space: nowrap;
+}
+
+.odd-style,
+.even-style {
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.odd-style {
+  background-color: #ffffff;
+}
+
+.even-style {
+  background-color: #f8f9fc;
+}
+
+.odd-style:hover,
+.even-style:hover {
+  background-color: #eef0fb;
+}
+
+.referral-table td {
+  padding: 16px 20px;
+  font-size: 14px;
+  color: #1f2230;
+  border-top: 1px solid #eceef3;
+  white-space: nowrap;
+}
+
+.referral-table td:last-child {
+  font-weight: 700;
+  color: #5b5fec;
+}
+
+.pagination-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.pagination-container > p {
+  margin: 0;
+  font-size: 14px;
+  color: #8a8f9c;
+}
+
+.pagination-container > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.previous-button {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2230;
+  background-color: #ffffff;
+  border: 1px solid #e2e5ee;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.previous-button:hover:not(:disabled) {
+  background-color: #f1f3f8;
+}
+
+.previous-button:disabled {
+  color: #c2c5d1;
+  cursor: not-allowed;
+}
+
+.pagination-container button:not(.previous-button) {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2230;
+  background-color: #ffffff;
+  border: 1px solid #e2e5ee;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.pagination-container button:not(.previous-button):hover {
+  background-color: #f1f3f8;
+}
+
+.active-page {
+  background-color: #5b5fec !important;
+  border-color: #5b5fec !important;
+  color: #ffffff !important;
+}
+
+@media (max-width: 768px) {
+  .filter-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-container,
+  .sort-container {
+    justify-content: space-between;
+  }
+
+  .search-container input {
+    width: 100%;
+    flex: 1;
+  }
+
+  .pagination-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .all-referral-container {
+    width: 90%;
+  }
+  .all-referral-sub-container {
+    padding: 20px;
+  }
+
+  .pagination-container > div {
+    flex-wrap: wrap;
+  }
+}

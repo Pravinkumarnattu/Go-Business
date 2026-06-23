@@ -1,0 +1,47 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 1rem;
+    width: 80%;
+}
+.header-heading {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #5b5fec;
+    cursor: pointer;
+}
+.header-buttons {
+    display: flex;
+    align-items: center;
+}
+.try-button {
+    background-color: #5b5fec;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.logout-button {
+    background-color: transparent;
+    color: #c92222;
+    border: 1px solid #c92222;
+    padding: 0.5rem 1rem;
+    margin: 0 0 0 0.75rem;
+    border-radius: 12px;
+    cursor: pointer;
+}
+@media (max-width: 480px) {
+    .header {
+        width: 100%;
+    }
+    .header-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .try-button, .logout-button {
+        margin: 0.5rem 0 0 0;
+    }
+}

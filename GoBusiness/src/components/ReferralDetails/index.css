@@ -1,0 +1,144 @@
+.referrals-details-container {
+  background-color: #eef1f8;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.referrals-details-sub-container {
+  width: 80%;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.referrals-details-sub-container > p:first-child {
+  font-size: 14px;
+  color: #4b4de8;
+  cursor: pointer;
+  margin-bottom: 16px;
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+
+.referrals-details-sub-container > p:first-child:hover {
+  text-decoration: underline;
+}
+
+.referral-head {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0 0 6px 0;
+}
+
+.referral-p {
+  font-size: 14px;
+  color: #8a8fa8;
+  margin: 0 0 28px 0;
+}
+
+.person-details {
+  background-color: #ffffff;
+  border-radius: 14px;
+  padding: 30px 32px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  max-width: 640px;
+}
+
+.headline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.headline h1 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0;
+}
+
+.headline div {
+  background-color: #eceeff;
+  color: #4b4de8;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 16px;
+  border-radius: 20px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #f0f2f8;
+  margin: 0;
+}
+
+.referral-id,
+.person-name,
+.person-service-name,
+.person-date,
+.person-profit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+}
+
+.referral-id p:first-child,
+.person-name p:first-child,
+.person-service-name p:first-child,
+.person-date p:first-child,
+.person-profit p:first-child {
+  font-size: 12px;
+  font-weight: 600;
+  color: #9da3b8;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.referral-id p:last-child,
+.person-name p:last-child,
+.person-service-name p:last-child,
+.person-date p:last-child,
+.person-profit p:last-child {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .referrals-details-sub-container {
+    width: 90%;
+    margin: 24px auto;
+    padding: 0 14px;
+  }
+
+  .referral-head {
+    font-size: 22px;
+  }
+
+  .person-details {
+    padding: 20px 18px;
+  }
+
+  .headline h1 {
+    font-size: 20px;
+  }
+
+  .referral-id,
+  .person-name,
+  .person-service-name,
+  .person-date,
+  .person-profit {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    padding: 14px 0;
+  }
+}
