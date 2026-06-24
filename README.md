@@ -232,8 +232,3 @@ src/
 ├── App.jsx
 └── main.jsx
 ```
-
-## Deployment
-
-- **Source:** public GitHub repository (or zip file) including this README
-- **Live demo:** deployed on Vercel
